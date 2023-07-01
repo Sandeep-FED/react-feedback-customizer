@@ -8,7 +8,7 @@ import * as strings from 'FeedbackApplicationCustomizerStrings';
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import  FeedbackCustomzier  from "./components/FeedbackCustomizer";
+import  FeedbackCustomizer  from "./components/FeedbackCustomizer";
 
 const LOG_SOURCE: string = 'FeedbackApplicationCustomizer';
 
@@ -54,7 +54,7 @@ export default class FeedbackApplicationCustomizer
         if (!this._rootElement) {
           this._rootElement = this.HeaderPlaceholder.domElement;
         }
-        const elem: React.ReactElement<any> = React.createElement(FeedbackCustomzier, {
+        const elem: React.ReactElement<any> = React.createElement(FeedbackCustomizer, {
           context: this.context,
         });
         ReactDOM.render(elem, this.HeaderPlaceholder.domElement);
